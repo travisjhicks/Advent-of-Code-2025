@@ -45,8 +45,8 @@ Inherits ConsoleApplication
 		Private Function MaxJoltage(bank As String, count As Integer) As UInt64
 		  Var Joltage As UInt64
 		  Var NextDigit As Integer
-		  For Index As Integer = 0 To Count - 1
-		    NextDigit = MaxDigit(bank.Left(bank.Length - (Count - 1 - Index)))
+		  For Index As Integer = 0 To count - 1
+		    NextDigit = MaxDigit(bank.Left(bank.Length - (count - 1 - Index)))
 		    bank = bank.Middle(bank.IndexOf(NextDigit.ToString) + 1)
 		    Joltage = Joltage * 10 + NextDigit
 		  Next
