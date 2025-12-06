@@ -25,7 +25,7 @@ Inherits ConsoleApplication
 		    End If
 		  Next
 		  
-		  // Process left to right
+		  // Process right to left
 		  // Should be using a state machine here but let's just rely on formatting consistency for the operator alignment
 		  Var Operands() As UInt64
 		  Var Operator As String
