@@ -27,7 +27,7 @@ Inherits ConsoleApplication
 
 	#tag Method, Flags = &h21
 		Private Function ComputeColumn(column As Integer) As UInt64
-		   Var Operator As String = Cells(Cells.LastIndex(1), column)
+		  Var Operator As String = Cells(Cells.LastIndex(1), column)
 		  Var Value As UInt64 = Cells(0, column).ToInt64
 		  For Row As Integer = 1 To Cells.LastIndex(1) - 1
 		    Select Case Operator
